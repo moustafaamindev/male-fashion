@@ -1,1 +1,54 @@
+//start image slider
 
+.slide {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+  transition: 0.3s;
+  .caption {
+    padding: 30% 20px;
+    span {
+      color: $main-color;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    h3 {
+      color: $black;
+      font-weight: 600;
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+    p {
+      color: $black;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+  }
+}
+.slide-1 {
+  background-image: url(../imgs/slider/hero-1.jpg);
+}
+.slide-2 {
+  background-image: url(../imgs/slider/hero-2.jpg);
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.arrow-right {
+  right: 2em;
+  font-size: 20px;
+}
+.arrow-left {
+  left: 2em;
+  font-size: 20px;
+}
+
+//end image slider

@@ -1,0 +1,154 @@
+// start join-us
+.join-us {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  .sigin-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 100px;
+    z-index: 20;
+    @include mdwidth {
+      padding: 23px;
+    }
+    .row {
+      height: 100px;
+      .caption {
+        @include mdwidth {
+          height: 60px;
+        }
+        p {
+          color: $black;
+          font-size: 16;
+          margin-right: 20px;
+          font-weight: 500;
+        }
+        .btn {
+          font-size: 20px;
+          color: $white;
+          padding: 16px 38px;
+          background-color: $main-color;
+          margin-left: 15px;
+          &:hover {
+            padding: 20px 42px;
+            transition: 0.4s;
+            @include mdwidth {
+              padding: 10px 30px;
+            }
+          }
+          @include lgwidth {
+            font-size: 16px;
+            padding: 10px 25px;
+          }
+        }
+      }
+    }
+  }
+  .right {
+    background-image: url(../imgs/header/bg-image-10.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 900px;
+    height: 100vh;
+    margin-right: 20px;
+    @include lgwidth {
+      display: none;
+    }
+    h1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 35%;
+      font-weight: 700;
+      font-size: 30px;
+      color: #292930;
+    }
+  }
+  .left {
+    width: 100%;
+    display: flex;
+    margin: 128px -30px -30px;
+    @include lgwidth {
+      justify-content: center;
+    }
+    @include mdwidth {
+      margin: 200px 0;
+    }
+    .form {
+      height: calc(100vh - 180px);
+      width: 100%;
+      padding: 30px;
+      @include lgwidth {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      h3 {
+        font-weight: 800;
+        font-size: 30px;
+        margin-bottom: 16px;
+        color: $black;
+      }
+      p {
+        line-height: 1.65;
+        font-size: 18px;
+        color: #999fae;
+        margin-bottom: 55px;
+      }
+      .singin-form {
+        .form-group {
+          position: relative;
+          margin-bottom: 30px;
+          input {
+            width: 100%;
+            border-radius: 6px;
+            color: #999fae;
+          }
+          .form-control {
+            height: 73px;
+            border-color: #999fae;
+            padding: 0 30px;
+            width: 500px;
+            @include mdwidth {
+              width: 100%;
+            }
+            &:hover {
+              border-color: #3577f0;
+            }
+          }
+          label {
+            position: absolute;
+            top: -11px;
+            left: 20px;
+            z-index: 4;
+            font-size: 16px;
+            font-weight: 400;
+            background: #fff;
+            padding: 0 10px;
+            color: #999fae;
+          }
+          button {
+            padding: 20px;
+            background-color: #3577f0;
+            color: $white;
+            font-size: 18px;
+            border-radius: 6px;
+            border-color: #3577f0;
+            @include mdwidth {
+              padding: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// end join-us

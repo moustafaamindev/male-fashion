@@ -152,6 +152,28 @@ module.exports = {
         removeAttributeQuotes: true,
       },
     }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      inject: "body",
+      template: "./src/join-us.ejs",
+      filename: "join-us.html",
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      inject: "body",
+      template: "./src/sign-in.ejs",
+      filename: "sign-in.html",
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true,
+      },
+    }),
   ],
 
   module: {

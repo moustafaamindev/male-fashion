@@ -9,22 +9,8 @@
     <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" />
   </head>
   <body>
-    <div class="container mt-5">
-      <%- include('./components/header.ejs') %>
-      <ul class="d-flex justify-content-around align-items-center">
-        <li><a href="./about.html">about</a></li>
-        <li><a href="./shop.html">shop</a></li>
-        <li><a href="./blog-details.html">blog-details</a></li>
-        <li><a href="./check-out.html">check-out</a></li>
-        <li><a href="./contacts.html">contacts</a></li>
-        <li><a href="./pages.html">pages</a></li>
-        <li><a href="./shop-details.html">shop-details</a></li>
-        <li><a href="./shopping-cart.html">shopping-cart</a></li>
-        <li><a href="./blog.html">blog</a></li>
-      </ul>
-      <%- include('./components/footer.ejs') %>
-    </div>
-
+    <%- include('./components/header.ejs') %> <%- include('./components/image-slider.ejs') %> <%-
+    include('./components/footer.ejs') %>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
     <script>

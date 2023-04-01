@@ -6,10 +6,10 @@
         button {
           display: flex;
           align-items: center;
-          font-size: 16px;
+          font-size: 14px;
           color: $white;
           svg {
-            font-size: 16px;
+            font-size: 14px;
           }
         }
         ul {
@@ -33,7 +33,9 @@
     .link {
       a {
         color: $white;
-        font-size: 16px;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
         &:hover {
           color: #3577f0;
         }
@@ -44,8 +46,13 @@
     width: 100%;
     background-color: $white;
     border-radius: 10px;
+    .logo {
+      @include mdwidth {
+        width: 147px;
+      }
+    }
     .links {
-      li {
+      .nav-item {
         position: relative;
         margin: 0 15px;
         a {
@@ -70,12 +77,13 @@
             transition: transform 0.3s ea;
           }
         }
-        .dropdown-menu {
-          min-width: 8rem !important;
-          transform: translate(-39px, 37px) !important;
-          .dropdown-item {
+      }
+      .dropdown-menu {
+        transform: translate(-39px, 37px) !important;
+        li {
+          a {
             &:hover {
-              background-color: $white;
+              background-color: $white !important;
               color: $main-color;
             }
           }
@@ -90,6 +98,7 @@
           width: 100%;
           height: 2px;
           background: $main-color;
+          transform: scale(1, 1);
         }
       }
     }
@@ -105,9 +114,6 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          &:hover {
-            color: $white;
-          }
           &::after {
             content: "";
             position: absolute;
@@ -122,11 +128,43 @@
             transform: scale(0);
           }
           &:hover {
+            color: $white;
+            @include smwidth {
+              color: #777777;
+            }
             &::after {
               transform: scale(1);
               transition: transform 0.3s ea;
+              @include smwidth {
+                transform: scale(0);
+              }
             }
           }
+        }
+      }
+    }
+  }
+  .offcanvas {
+    width: calc(100% - 50%);
+    @include smwidth {
+      width: calc(100% - 30%);
+    }
+    .offcanvas-body {
+      .link {
+        ul {
+          a {
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            color: $black;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .links {
+        a {
+          font-size: 14px;
+          font-weight: 600;
         }
       }
     }

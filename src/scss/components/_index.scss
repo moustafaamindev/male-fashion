@@ -1,40 +1,86 @@
 //start image slider
-
 .slide {
-  .icon {
-    font-size: 25px;
-    color: $black;
-  }
-  .caption {
-    h6 {
-      color: $main-color;
-      font-size: 25px;
+  .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    @include lgwidth {
+      top: 90%;
     }
-    h1 {
-      color: $black;
-      font-weight: 600;
-      font-size: 40px;
-      margin: 15px 0;
-    }
-    p {
-      color: $black;
-      font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-    .btn {
-      background-color: $black;
-      color: $white;
-      font-size: 16px;
-      width: 150px;
-      padding: 10px;
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      &:hover {
+        color: #000;
+        background: none;
+      }
       svg {
-        padding-left: 11px;
+        font-size: 30px;
+      }
+    }
+    .owl-prev {
+      left: 70px;
+      @include xlgwidth {
+        left: 10px;
+      }
+      @include lgwidth {
+        left: 20%;
+      }
+    }
+    .owl-next {
+      right: 70px;
+      @include xlgwidth {
+        right: 10px;
+      }
+      @include lgwidth {
+        right: 60%;
       }
     }
   }
+  .item {
+    height: 90vh;
+    background-size: cover;
+    background-position: 50% 50%;
+    .caption {
+      height: 90vh;
+      .caption-text {
+        h6 {
+          color: $main-color;
+          font-size: 25px;
+        }
+        h1 {
+          color: $black;
+          font-weight: 600;
+          font-size: 40px;
+          margin: 15px 0;
+        }
+        p {
+          color: $black;
+          font-size: 16px;
+          line-height: 1.6;
+          margin-bottom: 20px;
+        }
+        .btn {
+          background-color: $black;
+          color: $white;
+          font-size: 16px;
+          width: 150px;
+          padding: 10px;
+          svg {
+            padding-left: 11px;
+          }
+        }
+      }
+    }
+  }
+  .item-1 {
+    background-image: url(./../imgs/slider/hero-1.jpg);
+  }
+  .item-2 {
+    background-image: url(./../imgs/slider/hero-2.jpg);
+  }
 }
-
 //end image slider
 
 // start banner

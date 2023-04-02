@@ -1,16 +1,17 @@
-//
-var countDownDate = new Date("Oct 16 , 2021 00:00:00").getTime();
-var x = setInterval(function () {
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
+//start o'clock
+let countDownDate = new Date("May 1 , 2023 23:59:59").getTime();
+let x = setInterval(function () {
+  let now = new Date().getTime();
+  let distance = countDownDate - now;
 
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   document.getElementById("days").innerHTML = days;
   document.getElementById("hours").innerHTML = hours;
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
 }, 1000);
+//end o'clock

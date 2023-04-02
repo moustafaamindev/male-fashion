@@ -22,11 +22,15 @@
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
     <script>
+      const nextIcon = '<i class="fa-solid fa-arrow-left next_arrow"></i>';
+      const prevIcon = '<i class="fa-solid fa-arrow-right prev_arrow"></i>';
       $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
           loop: true,
-          margin: 10,
+          margin: 0,
           nav: true,
+          dots: false,
+          navText: [nextIcon, prevIcon],
           responsive: {
             0: {
               items: 1,

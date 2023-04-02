@@ -291,3 +291,34 @@
 }
 
 // end Shoe Collection
+
+// start Instagram section
+
+.instagram {
+  .insta-text {
+    padding: 100px 0;
+    @media (min-width: 767px) and (max-width: 1200px) {
+      padding: 60px 0;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      color: $black;
+      margin-bottom: 40px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 2;
+      color: $black;
+      font-weight: 400;
+    }
+    h2 {
+      margin-top: 70px;
+      color: $main-color;
+      font-size: 35px;
+      font-weight: 700;
+    }
+  }
+}
+
+// end Instagram section

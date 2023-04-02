@@ -295,6 +295,13 @@
 // start Instagram section
 
 .instagram {
+  margin-bottom: 100px;
+  .col,
+  img {
+    @media (max-width: 400px) {
+      width: 100%;
+    }
+  }
   .insta-text {
     padding: 100px 0;
     @media (min-width: 767px) and (max-width: 1200px) {

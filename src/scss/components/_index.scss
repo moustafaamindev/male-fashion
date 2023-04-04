@@ -565,3 +565,22 @@
 }
 
 // end LATEST NEWS
+
+.remove {
+  display: none;
+}
+.show {
+  display: block;
+}
+.active-btn {
+  color: #111111 !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

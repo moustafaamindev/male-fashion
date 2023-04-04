@@ -43,7 +43,7 @@ function showall() {
   all.classList.add("active-btn");
   newAriv.classList.remove("active-btn");
   hotSale.classList.remove("active-btn");
-}
+};
 function showsale() {
   hotSales1.classList.add("remove");
   hotSales2.classList.add("remove");
@@ -60,7 +60,7 @@ function showsale() {
   newAriv.classList.add("active-btn");
   all.classList.remove("active-btn");
   hotSale.classList.remove("active-btn");
-}
+};
 function showarrive() {
   hotSales1.classList.add("show");
   hotSales2.classList.add("show");
@@ -77,7 +77,7 @@ function showarrive() {
   hotSale.classList.add("active-btn");
   newAriv.classList.remove("active-btn");
   all.classList.remove("active-btn");
-}
+};
 
 all.addEventListener("click", showall);
 newAriv.addEventListener("click", showsale);

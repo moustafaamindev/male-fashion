@@ -15,4 +15,15 @@ let x = setInterval(function () {
   document.getElementById("seconds").innerHTML = seconds;
 }, 1000);
 
-//end o'clock
+// start scroll:
+
+let scroll = document.querySelector(".scroll-up");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  if (this.scrollY >= 900) {
+    scroll.classList.add("up-show");
+  } else {
+    scroll.classList.remove("up-show");
+  }
+};

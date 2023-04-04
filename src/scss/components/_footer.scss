@@ -1,3 +1,82 @@
-h2 {
-  color: green;
+// start footer
+
+.footer {
+  background-color: $black;
+  .col {
+    .box {
+      .logo {
+        margin-bottom: 25px;
+      }
+      p {
+        color: #b7b7b7;
+        font-size: 15px;
+        line-height: 30px;
+        margin-bottom: 30px;
+      }
+      .email {
+        input {
+          width: 100%;
+          font-size: 15px;
+          color: #3d3d3d;
+          background: $black;
+          border: none;
+          padding: 15px 0;
+          border-bottom: 2px solid #ffffff;
+        }
+        a {
+          color: #b7b7b7;
+          font-size: 18px;
+          right: 0;
+        }
+      }
+    }
+    h5 {
+      color: $white;
+      font-size: 15px;
+      font-weight: 700;
+
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+    ul {
+      li {
+        margin-bottom: 15px;
+        a {
+          color: #b7b7b7;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .Copyright {
+    color: #b7b7b7;
+    svg {
+      color: $main-color;
+    }
+    a {
+      color: $main-color;
+    }
+  }
 }
+.scroll-up {
+  position: fixed;
+  right: 16px;
+  bottom: -50px;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #e53637;
+  color: #ffffff;
+  z-index: 12;
+  transition: 0.4s;
+  &:hover {
+    transform: translateY(-4px);
+    color: $white;
+  }
+}
+.up-show {
+  bottom: 15px;
+}
+
+//end footer

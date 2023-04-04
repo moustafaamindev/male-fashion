@@ -178,6 +178,150 @@
 
 // end banner
 
+// start product
+.product {
+  .product_btn {
+    margin: 0 0 35px;
+    button {
+      font-size: 24px;
+      font-weight: 700;
+      color: #b7b7b7;
+      background: none;
+      border: none;
+      margin: 0 35px;
+    }
+  }
+  .product_item {
+    animation: fadeIn 3s;
+    padding: 10px;
+    .card {
+      border: none;
+      padding: 10px;
+      transition: 0.4s;
+      position: relative;
+      &:hover {
+        .btn_gro {
+          opacity: 1;
+        }
+      }
+      .btn_gro {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.4s;
+        .btn {
+          background-color: #fff;
+          padding: 7px;
+          margin: 0 0 8px 0;
+        }
+      }
+      .new,
+      .saler {
+        position: absolute;
+        left: 10px;
+        top: 30px;
+        padding: 3px 15px;
+        font-size: 13px;
+        display: inline-block;
+      }
+      .new {
+        background-color: #fff;
+        color: #000;
+      }
+      .saler {
+        background-color: #000;
+        color: #fff;
+      }
+      &:hover {
+        transform: scale3d(1.1, 1.1, 1.1);
+      }
+      .card-body {
+        padding: 20px 0;
+        position: relative;
+        &:hover {
+          .add-cart {
+            opacity: 1;
+          }
+        }
+        h2 {
+          color: #111111;
+          font-size: 15px;
+          font-weight: 600;
+          margin-bottom: 5px;
+        }
+        .add-cart {
+          font-size: 12px;
+          color: #e53637;
+          font-weight: 700;
+          position: absolute;
+          right: 0;
+          top: 50px;
+          opacity: 0;
+          transition: 0.4s;
+        }
+        .card-text {
+          margin-bottom: 5px;
+          svg {
+            color: #f7941d;
+            font-size: 14px;
+            margin-left: -3px;
+          }
+        }
+        .sale {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          &:hover {
+            .change-color {
+              opacity: 1;
+            }
+          }
+          h3 {
+            color: #0d0d0d;
+            font-weight: 700;
+            font-size: 18px;
+          }
+          .change-color {
+            opacity: 0;
+            transition: 0.4s;
+            span {
+              display: inline-block;
+              width: 14px;
+              height: 14px;
+              cursor: pointer;
+              border-radius: 50%;
+            }
+            .blue {
+              background-color: #5e64d1;
+            }
+            .black {
+              background-color: #404a47;
+              position: relative;
+              &::after {
+                position: absolute;
+                left: -2px;
+                top: -2px;
+                height: 18px;
+                width: 18px;
+                border: 1px solid #b9b9b9;
+                content: "";
+                border-radius: 50%;
+              }
+            }
+            .yallow {
+              background-color: #d5a667;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// end product
+
 // start Shoe Collection
 
 .Shoe-Collection {
@@ -329,3 +473,23 @@
 }
 
 // end Instagram section
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// classes js
+.active-btn {
+  color: #111111 !important;
+}
+.remove {
+  display: none;
+}
+.show {
+  display: block;
+}

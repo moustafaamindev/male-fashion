@@ -88,7 +88,6 @@ hotSale.addEventListener("click", showarrive);
 
 let scroll = document.querySelector(".scroll-up");
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
   if (this.scrollY >= 900) {
     scroll.classList.add("up-show");
@@ -96,3 +95,4 @@ window.onscroll = function () {
     scroll.classList.remove("up-show");
   }
 };
+//end scroll

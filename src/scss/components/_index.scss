@@ -586,11 +586,15 @@
 // end LATEST NEWS
 // start search modal
 .search-modal {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   background: #000000e6;
-  z-index: 100;
+  z-index: 1500;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .close {
     position: absolute;
     top: 50px;
@@ -620,7 +624,5 @@
     }
   }
 }
-.hidden {
-  display: none !important;
-}
+
 // end search modal

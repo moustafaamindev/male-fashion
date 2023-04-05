@@ -116,10 +116,16 @@ for (let but of addCart) {
 let search = document.querySelector(".search-modal");
 let openModal = document.getElementById("open-modal");
 let closeModal = document.getElementById("close-modal");
-search.addEventListener("click", modal);
+let open1 = document.getElementById("open");
 
-function modal() {
-  // search.classList.toggle("hidden");
-  console.log(123);
+openModal.addEventListener("click", modalopen);
+closeModal.addEventListener("click", modalclose);
+open1.addEventListener("click", modalopen);
+
+function modalopen() {
+  search.style.display = "flex";
+}
+function modalclose() {
+  search.style.display = "none";
 }
 // end search-modal

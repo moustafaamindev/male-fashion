@@ -43,7 +43,7 @@ function showall() {
   all.classList.add("active-btn");
   newAriv.classList.remove("active-btn");
   hotSale.classList.remove("active-btn");
-};
+}
 function showsale() {
   hotSales1.classList.add("remove");
   hotSales2.classList.add("remove");
@@ -60,7 +60,7 @@ function showsale() {
   newAriv.classList.add("active-btn");
   all.classList.remove("active-btn");
   hotSale.classList.remove("active-btn");
-};
+}
 function showarrive() {
   hotSales1.classList.add("show");
   hotSales2.classList.add("show");
@@ -77,7 +77,7 @@ function showarrive() {
   hotSale.classList.add("active-btn");
   newAriv.classList.remove("active-btn");
   all.classList.remove("active-btn");
-};
+}
 
 all.addEventListener("click", showall);
 newAriv.addEventListener("click", showsale);
@@ -95,4 +95,31 @@ window.onscroll = function () {
     scroll.classList.remove("up-show");
   }
 };
+
 //end scroll
+
+//start add product to cart
+
+let cart = document.querySelector(".cart"),
+  addCart = document.getElementsByClassName("add-cart");
+for (let but of addCart) {
+  but.onclick = (e) => {
+    let item = Number(cart.getAttribute("data-count") || 0);
+    cart.setAttribute("data-count", item + 1);
+    cart.classList.add("zero");
+  };
+}
+
+//end add product to cart
+// start search-modal
+
+let search = document.querySelector(".search-modal");
+let openModal = document.getElementById("open-modal");
+let closeModal = document.getElementById("close-modal");
+search.addEventListener("click", modal);
+
+function modal() {
+  // search.classList.toggle("hidden");
+  console.log(123);
+}
+// end search-modal

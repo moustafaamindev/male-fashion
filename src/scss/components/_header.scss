@@ -114,32 +114,52 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          &::after {
-            content: "";
+          // &::after {
+          //   content: "";
+          //   position: absolute;
+          //   left: -8px;
+          //   bottom: -10px;
+          //   width: 45px;
+          //   height: 45px;
+          //   border-radius: 50%;
+          //   background-color: #e53637;
+          //   z-index: -1;
+          //   transition: all, 0.5s ease;
+          //   transform: scale(0);
+          // }
+          // &:hover {
+          //   color: $white;
+          //   @include smwidth {
+          //     color: #777777;
+          //   }
+          //   &::after {
+          //     transform: scale(1);
+          //     transition: transform 0.3s ea;
+          //     @include smwidth {
+          //       transform: scale(0);
+          //     }
+          //   }
+          // }
+        }
+        .cart {
+          &::before {
+            content: attr(data-count);
+            color: white;
             position: absolute;
-            left: -8px;
-            bottom: -10px;
-            width: 45px;
-            height: 45px;
+            left: 16px;
+            font-size: 13px;
+            font-weight: 600;
+            text-align: center;
+            top: -12px;
+            width: 20px;
+            height: 20px;
+            background: $main-color;
             border-radius: 50%;
-            background-color: #e53637;
-            z-index: -1;
-            transition: all, 0.5s ease;
-            transform: scale(0);
+            opacity: 0;
           }
-          &:hover {
-            color: $white;
-            @include smwidth {
-              color: #777777;
-            }
-            &::after {
-              transform: scale(1);
-              transition: transform 0.3s ea;
-              @include smwidth {
-                transform: scale(0);
-              }
-            }
-          }
+        }
+        .cart.zero::before {
+          opacity: 1;
         }
       }
     }

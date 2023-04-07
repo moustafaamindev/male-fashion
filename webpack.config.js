@@ -6,6 +6,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const autoprefixer = require("autoprefixer");
 const webpack = require("webpack");
 const path = require("path");
+
 module.exports = {
   entry: {
     app: path.resolve(__dirname, "src", "js", "app.js"),
@@ -26,6 +27,7 @@ module.exports = {
       directory: path.join(__dirname, "dev"),
     },
   },
+
   optimization: {
     minimizer: [new TerserPlugin({ exclude: /node_modules/ }), new CssMinimizerPlugin()],
   },
@@ -34,6 +36,7 @@ module.exports = {
     maxAssetSize: 512000,
     maxEntrypointSize: 512000,
   },
+
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
@@ -201,6 +204,10 @@ module.exports = {
         test: /\.scss$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"],
       },
+      // {
+      //   test: /\.php$/,
+      //   loaders: ["html-minify", "php-loader"],
+      // },
       {
         test: /\.(png|gif|jpg|svg)$/i,
         use: [

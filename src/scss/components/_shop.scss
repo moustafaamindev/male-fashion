@@ -21,3 +21,22 @@
 }
 
 //end breadcrumb
+// strat side-bar
+.side-bar {
+  padding-right: 20px;
+  .search {
+    border: 1px solid #e5e5e5;
+    input {
+      padding-left: 20px;
+      height: 40px;
+      font-size: 15px;
+      color: #b7b7b7;
+    }
+    svg {
+      color: #b7b7b7;
+      padding: 0 20px;
+    }
+  }
+}
+
+// end side-bar

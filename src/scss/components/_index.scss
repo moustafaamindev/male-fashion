@@ -11,30 +11,36 @@
     .owl-prev,
     .owl-next {
       position: absolute;
+      background: white !important;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include smwidth {
+        width: 30px;
+        height: 30px;
+      }
       &:hover {
         color: #000;
-        background: none;
       }
       svg {
         font-size: 30px;
+        @include smwidth {
+          font-size: 20px;
+        }
       }
     }
     .owl-prev {
       left: 70px;
-      @include xlgwidth {
-        left: 10px;
-      }
       @include lgwidth {
         left: 20%;
       }
     }
     .owl-next {
       right: 70px;
-      @include xlgwidth {
-        right: 10px;
-      }
       @include lgwidth {
-        right: 60%;
+        right: 40%;
       }
     }
   }
@@ -42,24 +48,35 @@
     height: 90vh;
     background-size: cover;
     background-position: 50% 50%;
+    @include lgwidth {
+      background-position: 62% 50%;
+    }
     .caption {
       height: 90vh;
       .caption-text {
         h6 {
           color: $main-color;
-          font-size: 25px;
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
         }
         h1 {
           color: $black;
-          font-weight: 600;
-          font-size: 40px;
+          font-weight: 700;
+          font-size: 48px;
           margin: 15px 0;
+          @include smwidth {
+            font-size: 35px;
+          }
         }
         p {
           color: $black;
           font-size: 16px;
           line-height: 1.6;
           margin-bottom: 20px;
+          @include smwidth {
+            font-size: 14px;
+          }
         }
         .btn {
           background-color: $black;
@@ -67,8 +84,43 @@
           font-size: 16px;
           width: 150px;
           padding: 10px;
+          @include smwidth {
+            font-size: 15px;
+            width: 130px;
+            padding: 8px;
+          }
           svg {
             padding-left: 11px;
+          }
+        }
+        .social {
+          margin-top: 20px;
+          a {
+            svg {
+              margin-right: 15px;
+              font-size: 20px;
+              transition: 0.3s;
+            }
+          }
+          .facebook {
+            svg {
+              color: #1877f2;
+            }
+          }
+          .pinterest {
+            svg {
+              color: #bd081c;
+            }
+          }
+          .instagram {
+            svg {
+              color: #e4405f;
+            }
+          }
+          .twitter {
+            svg {
+              color: #1da1f2;
+            }
           }
         }
       }
@@ -104,14 +156,16 @@
       }
       h2 {
         color: #111111;
-        font-weight: 500;
+        font-weight: 700;
         line-height: 1.2;
         margin-bottom: 14px;
-        font-size: 40px;
+        font-size: 36px;
         letter-spacing: 3px;
         @include lgwidth {
-          font-size: 30px;
           letter-spacing: 0;
+        }
+        @include smwidth {
+          font-size: 25px;
         }
       }
       &:hover {
@@ -123,7 +177,7 @@
       a {
         display: inline-block;
         color: #111111;
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 700;
         letter-spacing: 4px;
         text-transform: uppercase;
@@ -182,13 +236,14 @@
 .product {
   .product_btn {
     margin: 0 0 35px;
+    flex-wrap: wrap;
     button {
-      font-size: 24px;
+      font-size: 23px;
       font-weight: 700;
       color: #b7b7b7;
       background: none;
       border: none;
-      margin: 0 35px;
+      margin: 7px 35px;
     }
   }
   .product_item {
@@ -200,6 +255,16 @@
       transition: 0.4s;
       position: relative;
       &:hover {
+        .card-body {
+          .sale {
+            .change-color {
+              opacity: 1;
+            }
+          }
+        }
+        .add-cart {
+          opacity: 1;
+        }
         .btn_gro {
           opacity: 1;
         }
@@ -241,26 +306,11 @@
       .card-body {
         padding: 20px 0;
         position: relative;
-        &:hover {
-          .add-cart {
-            opacity: 1;
-          }
-        }
         h2 {
           color: #111111;
           font-size: 15px;
           font-weight: 600;
           margin-bottom: 5px;
-        }
-        .add-cart {
-          font-size: 12px;
-          color: #e53637;
-          font-weight: 700;
-          position: absolute;
-          right: 0;
-          top: 50px;
-          opacity: 0;
-          transition: 0.4s;
         }
         .card-text {
           margin-bottom: 5px;
@@ -274,11 +324,6 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          &:hover {
-            .change-color {
-              opacity: 1;
-            }
-          }
           h3 {
             color: #0d0d0d;
             font-weight: 700;
@@ -316,6 +361,17 @@
             }
           }
         }
+      }
+      .add-cart {
+        font-size: 13px;
+        color: #e53637;
+        font-weight: 700;
+        position: absolute;
+        right: 50%;
+        top: 60%;
+        transform: translateX(50%);
+        opacity: 0;
+        transition: 0.4s;
       }
     }
   }
@@ -355,11 +411,17 @@
       margin-bottom: 20px;
       font-size: 34px;
       font-weight: 700;
+      @include smwidth {
+        font-size: 25px;
+      }
     }
     h2 {
       color: #b7b7b7;
       margin-bottom: 20px;
       font-size: 34px;
+      @include smwidth {
+        font-size: 25px;
+      }
     }
     &::after {
       content: "";

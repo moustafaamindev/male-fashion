@@ -36,6 +36,7 @@
         font-size: 14px;
         font-weight: 600;
         text-transform: uppercase;
+        transition: 0.3s;
         &:hover {
           color: #3577f0;
         }
@@ -103,6 +104,11 @@
       }
     }
     .action {
+      .mobile-toggle {
+        svg {
+          color: #111111;
+        }
+      }
       li {
         position: relative;
         margin: 0 15px;
@@ -114,6 +120,10 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          transition: 0.3s;
+          &:hover {
+            color: #111111;
+          }
           // &::after {
           //   content: "";
           //   position: absolute;
@@ -173,7 +183,7 @@
       .link {
         ul {
           a {
-            font-size: 14px;
+            font-size: 13px;
             letter-spacing: 2px;
             font-weight: 600;
             color: $black;

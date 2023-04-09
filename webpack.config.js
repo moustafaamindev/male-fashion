@@ -207,6 +207,11 @@ module.exports = {
       // {
       //   test: /\.php$/,
       //   loaders: ["html-minify", "php-loader"],
+      //   use: [
+      //     {
+      //       loader: "php-config-loader",
+      //     },
+      //   ],
       // },
       {
         test: /\.(png|gif|jpg|svg)$/i,

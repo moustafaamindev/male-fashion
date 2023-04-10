@@ -1,5 +1,5 @@
 //start o'clock
-let countDownDate = new Date("May 1 , 2023 23:59:59").getTime();
+let countDownDate = new Date("May 30 , 2023 23:59:59").getTime();
 let x = setInterval(function () {
   let now = new Date().getTime();
   let distance = countDownDate - now;

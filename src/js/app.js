@@ -8,3 +8,4 @@ import "bootstrap/dist/js/bootstrap.bundle";
 // import config from "../php/config.php";
 
 const home = require("./home");
+const shop = require("./shop");

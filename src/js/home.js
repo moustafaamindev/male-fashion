@@ -1,4 +1,5 @@
 //start o'clock
+
 let countDownDate = new Date("May 30 , 2023 23:59:59").getTime();
 let x = setInterval(function () {
   let now = new Date().getTime();
@@ -98,25 +99,25 @@ window.onscroll = function () {
 
 //end scroll
 
-//start add product to cart
+// start add product to cart
 
-let cart = document.querySelector(".cart"),
-  addCart = document.getElementsByClassName("add-cart");
-for (let but of addCart) {
-  but.onclick = (e) => {
-    let item = Number(cart.getAttribute("data-count") || 0);
-    cart.setAttribute("data-count", item + 1);
-    cart.classList.add("zero");
-  };
-}
+// let cart = document.querySelector(".cart"),
+//   addCart = document.getElementsByClassName("add-cart");
+// for (let but of addCart) {
+//   but.onclick = (e) => {
+//     let item = Number(cart.getAttribute("data-count") || 0);
+//     cart.setAttribute("data-count", item + 1);
+//     cart.classList.add("zero");
+//   };
+// }
 
 //end add product to cart
 // start search-modal
 
 let search = document.querySelector(".search-modal");
-let openModal = document.getElementById("open-modal");
-let closeModal = document.getElementById("close-modal");
-let open1 = document.getElementById("open");
+let openModal = document.querySelector(".open-modal");
+let closeModal = document.querySelector(".close-modal");
+let open1 = document.querySelector(".open");
 
 openModal.addEventListener("click", modalopen);
 closeModal.addEventListener("click", modalclose);

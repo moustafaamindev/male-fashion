@@ -151,25 +151,38 @@
           //   }
           // }
         }
-        .cart {
-          &::before {
-            content: attr(data-count);
-            color: white;
-            position: absolute;
-            left: 16px;
-            font-size: 13px;
-            font-weight: 600;
-            text-align: center;
-            top: -12px;
-            width: 20px;
-            height: 20px;
-            background: $main-color;
-            border-radius: 50%;
-            opacity: 0;
-          }
-        }
-        .cart.zero::before {
-          opacity: 1;
+        // .cart {
+        //   &::before {
+        //     content: attr(data-count);
+        //     color: white;
+        //     position: absolute;
+        //     left: 16px;
+        //     font-size: 13px;
+        //     font-weight: 600;
+        //     text-align: center;
+        //     top: -12px;
+        //     width: 20px;
+        //     height: 20px;
+        //     background: $main-color;
+        //     border-radius: 50%;
+        //     opacity: 0;
+        //   }
+        // }
+        // .cart.zero::before {
+        //   opacity: 1;
+        // }
+        .cart-item {
+          top: -13px;
+          right: -11px;
+          color: $white;
+          background-color: $main-color;
+          border-radius: 50%;
+          font-size: 13px;
+          height: 20px;
+          width: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
     }

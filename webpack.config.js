@@ -199,6 +199,14 @@ module.exports = {
         use: {
           loader: "babel-loader",
         },
+
+        // test: /\.js$/,
+        // loader: "babel-loader",
+        // options: {
+        //   plugins: ["transform-class-properties", "transform-object-rest-spread"],
+        //   // presets: ['env', 'react']
+        // },
+        // exclude: /node_modules/,
       },
       {
         test: /\.scss$/i,

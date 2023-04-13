@@ -85,19 +85,6 @@ newAriv.addEventListener("click", showsale);
 hotSale.addEventListener("click", showarrive);
 
 // end product
-// start scroll:
-
-let scroll = document.querySelector(".scroll-up");
-
-window.onscroll = function () {
-  if (this.scrollY >= 900) {
-    scroll.classList.add("up-show");
-  } else {
-    scroll.classList.remove("up-show");
-  }
-};
-
-//end scroll
 
 // start add product to cart
 
@@ -112,21 +99,5 @@ window.onscroll = function () {
 // }
 
 //end add product to cart
-// start search-modal
-
-let search = document.querySelector(".search-modal");
-let openModal = document.querySelector(".open-modal");
-let closeModal = document.querySelector(".close-modal");
-let open1 = document.querySelector(".open");
-
-openModal.addEventListener("click", modalopen);
-closeModal.addEventListener("click", modalclose);
-open1.addEventListener("click", modalopen);
-
-function modalopen() {
-  search.style.display = "flex";
-}
-function modalclose() {
-  search.style.display = "none";
-}
-// end search-modal
+const searhModal = require("./search-modal");
+const scroll = require("./scroll");

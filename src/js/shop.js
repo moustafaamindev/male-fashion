@@ -10,3 +10,6 @@ for (let i = 0; i < sidelenght; i++) {
   });
 }
 // end sidebar-size
+
+const searhModal = require("./search-modal");
+const scroll = require("./scroll");

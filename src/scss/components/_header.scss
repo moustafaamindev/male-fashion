@@ -80,13 +80,12 @@
         }
       }
       .dropdown-menu {
+        background-color: #111111;
         transform: translate(-39px, 37px) !important;
         li {
           a {
-            &:hover {
-              background-color: $white !important;
-              color: $main-color;
-            }
+            color: $white;
+            font-size: 15px;
           }
         }
       }

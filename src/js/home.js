@@ -99,5 +99,6 @@ hotSale.addEventListener("click", showarrive);
 // }
 
 //end add product to cart
+
 const searhModal = require("./search-modal");
 const scroll = require("./scroll");

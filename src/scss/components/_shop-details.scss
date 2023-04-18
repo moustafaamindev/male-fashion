@@ -1,0 +1,40 @@
+// start products-details
+
+.products-details {
+  background: #f3f2ee;
+  padding: 40px 0;
+  margin-bottom: 100px;
+  .bread-details {
+    margin-bottom: 40px;
+    a {
+      font-size: 15px;
+      color: #111111;
+    }
+    p {
+      font-size: 15px;
+      color: #b7b7b7;
+    }
+  }
+  .tabs {
+    width: 105px;
+    .tab4 {
+      svg {
+        position: absolute;
+        top: 36%;
+        transform: translate(-50%);
+        right: 24%;
+        font-size: 33px;
+        color: white;
+      }
+    }
+  }
+  .item {
+    display: none;
+  }
+  .active {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// end products-details

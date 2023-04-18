@@ -114,17 +114,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       inject: "body",
-      template: "./src/pages.ejs",
-      filename: "pages.html",
-      minify: {
-        removeComments: true,
-        collapseWhitespace: true,
-        removeAttributeQuotes: true,
-      },
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      inject: "body",
       template: "./src/shop-details.ejs",
       filename: "shop-details.html",
       minify: {

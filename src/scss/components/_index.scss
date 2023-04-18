@@ -689,3 +689,22 @@
 }
 
 // end search modal
+// start cart
+
+.cart {
+  display: none;
+  font-size: 14px;
+  font-weight: 400;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: auto;
+  // display: block;
+  width: 400px;
+  height: 100vh;
+  padding: 15px 20px 20px 20px;
+  background-color: $white;
+}
+
+// end cart

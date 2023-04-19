@@ -78,17 +78,15 @@ let x = setInterval(function () {
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   const day = document.getElementById("days");
-  const hour = document.getElementById("days");
-  const min = document.getElementById("days");
-  const sec = document.getElementById("days");
+  const hour = document.getElementById("hours");
+  const min = document.getElementById("minutes");
+  const sec = document.getElementById("seconds");
 
-  if (day) {
+  if (sec && min && hour && day) {
     day.innerHTML = days;
-
-    // min.innerHTML = minutes;
-    // sec.innerHTML = seconds;
-  } else if (hour) {
     hour.innerHTML = hours;
+    min.innerHTML = minutes;
+    sec.innerHTML = seconds;
   }
 }, 1000);
 

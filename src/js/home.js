@@ -1,23 +1,3 @@
-//start o'clock
-
-let countDownDate = new Date("May 30 , 2023 23:59:59").getTime();
-let x = setInterval(function () {
-  let now = new Date().getTime();
-  let distance = countDownDate - now;
-
-  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  document.getElementById("days").innerHTML = days;
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("seconds").innerHTML = seconds;
-}, 1000);
-
-//end o'clock
-
 // start product
 
 let all = document.getElementById("Best-Sellers"),
@@ -80,11 +60,39 @@ function showarrive() {
   all.classList.remove("active-btn");
 }
 
-all.addEventListener("click", showall);
-newAriv.addEventListener("click", showsale);
-hotSale.addEventListener("click", showarrive);
+all?.addEventListener("click", showall);
+newAriv?.addEventListener("click", showsale);
+hotSale?.addEventListener("click", showarrive);
 
 // end product
+//start o'clock
+
+let countDownDate = new Date("May 30 , 2023 23:59:59").getTime();
+let x = setInterval(function () {
+  let now = new Date().getTime();
+  let distance = countDownDate - now;
+
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  const day = document.getElementById("days");
+  const hour = document.getElementById("days");
+  const min = document.getElementById("days");
+  const sec = document.getElementById("days");
+
+  if (day) {
+    day.innerHTML = days;
+
+    // min.innerHTML = minutes;
+    // sec.innerHTML = seconds;
+  } else if (hour) {
+    hour.innerHTML = hours;
+  }
+}, 1000);
+
+//end o'clock
 
 // start add product to cart
 

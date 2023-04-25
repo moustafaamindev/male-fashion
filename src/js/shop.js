@@ -13,3 +13,15 @@ for (let i = 0; i < sidelenght; i++) {
 
 const searhModal = require("./search-modal");
 const scroll = require("./scroll");
+
+// start section shop 
+
+let rotate = document.querySelector('.drop_arow'),
+  icon = document.querySelector('.rotate-arow');
+
+function rotates() {
+  icon.classList.toggle('rotate')
+};
+rotate?.addEventListener("click", rotates);
+
+// end section shop 

@@ -1,2 +1,2 @@
-const searhModal = require("./search-modal");
+const searchModal = require("./search-modal");
 const scroll = require("./scroll");

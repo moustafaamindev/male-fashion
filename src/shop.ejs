@@ -5,20 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SHOP</title>
-    <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css"
+    />
   </head>
   <body>
-    <%- include('./components/header.ejs') %> <%- include('./components/breadcrumb-shop.ejs') %>
+    <%- include('./components/header.ejs') %> <%-
+    include('./components/breadcrumb-shop.ejs') %>
     <div class="shop mb-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 h-100"><%- include('./components/side-bar.ejs') %></div>
-          <div class="col-lg-9 h-100"><%- include('./components/product-shop.ejs') %></div>
+          <div class="col-lg-3 h-100">
+            <%- include('./components/side-bar.ejs') %>
+          </div>
+          <div class="col-lg-9 h-100">
+            <%- include('./components/product-shop.ejs') %>
+          </div>
         </div>
       </div>
     </div>
-    <%- include('./components/footer.ejs') %> <%- include('./components/search-modal.ejs') %>
+    <%- include('./components/footer.ejs') %> <%-
+    include('./components/search-modal.ejs') %>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
   </body>

@@ -1,0 +1,173 @@
+// start about us
+
+.about {
+  img {
+  }
+  .about-item {
+    h4 {
+      color: #111111;
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+    p {
+      font-size: 15px;
+      color: #3d3d3d;
+      font-weight: 400;
+      line-height: 1.6;
+      margin: 0 0 15px 0;
+    }
+  }
+}
+
+// end about us
+
+// start testimonial
+
+.testimonial {
+  .testimonial__pic {
+    height: 700px;
+    background-image: url(./../imgs/slider/hero-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 65% 50%;
+    .testimonial__text {
+      background: #f3f2ee94;
+      transition: 0.3s;
+      &:hover {
+        background: #f3f2ee;
+        span {
+          transform: rotate(180deg);
+        }
+      }
+      span {
+        color: #e53637;
+        font-size: 72px;
+        transition: 0.3s;
+      }
+      p {
+        color: #111111;
+        font-size: 20px;
+        font-style: italic;
+        line-height: 1.6;
+        margin-bottom: 25px;
+        @include smwidth {
+          font-size: 15px;
+        }
+      }
+      .testimonial_author {
+        .testimonial_author_pic {
+          img {
+            border-radius: 50%;
+          }
+        }
+        .testimonial_author_text {
+          h5 {
+            color: #111111;
+            font-weight: 700;
+            margin-bottom: 5px;
+          }
+          p {
+            margin: 0;
+            color: #3e3e3e;
+          }
+        }
+      }
+    }
+  }
+}
+
+// end testimonial
+
+// start counter
+
+.section_counter {
+  .counter_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .counter_item_number {
+      margin-right: 15px;
+      .number,
+      strong {
+        color: #111111;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 1.6;
+      }
+    }
+    p {
+      color: #3d3d3d;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+  }
+}
+
+// end counter
+
+// start section team
+
+.section_team,
+.section_client {
+  .banner_team {
+    text-align: center;
+    margin-bottom: 45px;
+    span {
+      color: #e53637;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+      display: block;
+    }
+    h6 {
+      color: #111111;
+      font-weight: 700;
+      line-height: 1.6;
+      font-size: 36px;
+    }
+  }
+  .team_content {
+    .team_item {
+      img {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+      h6 {
+        color: #111111;
+        font-weight: 700;
+        margin-bottom: 8px;
+        font-size: 24px;
+      }
+      p {
+        font-size: 15px;
+        color: #b7b7b7;
+      }
+    }
+  }
+}
+
+// end section team
+
+// start section client
+
+.section_client {
+  .client_content {
+    .client_item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        margin-bottom: 60px;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// end section client

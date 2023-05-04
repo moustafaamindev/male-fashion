@@ -17,6 +17,13 @@
   }
   .tabs {
     width: 105px;
+    display: flex;
+    flex-direction: column;
+    @include mdwidth {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+    }
     .tab4 {
       svg {
         position: absolute;
@@ -38,3 +45,15 @@
 }
 
 // end products-details
+//start Related Product
+
+.product {
+  h1 {
+    font-size: 25px;
+    color: $black;
+    font-weight: 700;
+    margin-bottom: 45px;
+  }
+}
+
+//end Related Product

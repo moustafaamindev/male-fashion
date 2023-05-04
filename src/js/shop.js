@@ -14,14 +14,14 @@ for (let i = 0; i < sidelenght; i++) {
 const searchModal = require("./search-modal");
 const scroll = require("./scroll");
 
-// start section shop 
+// start section shop
 
-let rotate = document.querySelector('.drop_arow'),
-  icon = document.querySelector('.rotate-arow');
+let rotate = document.querySelector(".drop_arow"),
+  icon = document.querySelector(".rotate-arow");
 
 function rotates() {
-  icon.classList.toggle('rotate')
-};
+  icon.classList.toggle("rotate");
+}
 rotate?.addEventListener("click", rotates);
 
-// end section shop 
+// end section shop

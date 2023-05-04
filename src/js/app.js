@@ -5,6 +5,7 @@ import "@fortawesome/fontawesome-free/js/regular";
 import "@fortawesome/fontawesome-free/js/brands";
 
 import "bootstrap/dist/js/bootstrap.bundle";
+const about = require("./about-us");
 const contacts = require("./contacts");
 const blog = require("./blog");
 const shopDetails = require("./shop-details");

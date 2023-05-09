@@ -1,6 +1,6 @@
 const searchModal = require("./search-modal");
 const scroll = require("./scroll");
-
+// start about-us
 let stats = document.querySelectorAll(".counter_item_number .number");
 let section = document.querySelector(".counter_item");
 let started = false;
@@ -23,3 +23,4 @@ function startCount(el) {
     }
   }, 2000 / goal);
 }
+// end about-us

@@ -91,6 +91,19 @@ let x = setInterval(function () {
 }, 1000);
 
 //end o'clock-
+// start navbar active
+const currentLocation = location.href;
+const navbarActive = document.querySelector(".links").querySelectorAll(".nav-link");
+const menuLenght = navbarActive.length;
+
+for (let i = 0; i < menuLenght; i++) {
+  // navbarActive.forEach((element) => {
+  if (navbarActive[i].href === currentLocation) {
+    document.querySelector(".active").classList.remove("active");
+    navbarActive[i].classList.add("active");
+  }
+}
+// end navbar active
 
 // start add product to cart
 

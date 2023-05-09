@@ -15,32 +15,25 @@
       color: #b7b7b7;
     }
   }
-  .tab {
-    width: 105px;
+
+  .images {
     display: flex;
     flex-direction: column;
     @include mdwidth {
-      width: 100%;
+      display: flex;
       flex-direction: row;
-      justify-content: space-around;
     }
-    .tab4 {
-      svg {
-        position: absolute;
-        top: 36%;
-        transform: translate(-50%);
-        right: 24%;
-        font-size: 33px;
-        color: white;
-      }
+    li {
+      cursor: pointer;
+      margin: 10px;
     }
   }
-  .item {
-    display: none;
-  }
-  .active {
+  .contents {
     display: flex;
     justify-content: center;
+  }
+  .contents > div:not(:first-child) {
+    display: none;
   }
 }
 

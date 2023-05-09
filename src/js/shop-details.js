@@ -25,6 +25,30 @@ for (let i = 0; i < sidelenght; i++) {
 }
 // end content-size
 // start shop-details-tabs
+let images = document.querySelectorAll(".images li ");
+let imagesArray = Array.from(images);
+let div = document.querySelectorAll(".contents>div ");
+let divArray = Array.from(div);
+
+imagesArray.forEach((ele) => {
+  ele.addEventListener("click", function (e) {
+    // console.log(ele);
+    imagesArray.forEach((ele) => {
+      ele.classList.remove("active");
+    });
+    e.currentTarget.classList.add("active");
+    divArray.forEach((div) => {
+      div.style.display = "none";
+    });
+    // console.log(e.currentTarget.dataset.cont);
+    document.querySelector(e.currentTarget.dataset.cont).style.display = "flex";
+  });
+});
+
+// console.log(tabsArray);
+
+// end shop-details-tabs
+// start shop-details-tabs
 let tabs = document.querySelectorAll(".tabs li ");
 let tabsArray = Array.from(tabs);
 let divs = document.querySelectorAll(".content>div ");

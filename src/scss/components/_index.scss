@@ -708,3 +708,24 @@
 }
 
 // end cart
+// page loader
+#preloader {
+  position: fixed;
+  height: 100vh;
+  background: #fff url(./../imgs/about/Dots\ Loader\ Animation.gif) no-repeat
+    center center;
+  z-index: 100;
+  width: 100%;
+}
+.spinner {
+  animation: spinnerd 2s forwards;
+}
+@keyframes spinnerd {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
